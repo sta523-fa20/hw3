@@ -1,0 +1,36 @@
+---
+title: "Homework 3"
+author: "[Team name: member 1, member 2, member 3, ...]"
+date: ""
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, comment = NA)
+```
+
+## Packages
+
+```{r packages}
+library(tidyverse)
+library(jsonlite)
+```
+
+
+## Part I
+
+```{r read_csv_data}
+res_scores <- read_csv("data/restaurant_scores.csv")
+```
+
+
+
+
+
+
+
+## Part II
+
+```{r read_json_data}
+dine <- read_json("data/restaurant_scores.json")
+```
