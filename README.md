@@ -36,7 +36,8 @@ complete the task.
 To get started, load the CSV file of restaurant scores.
 
 ```r
-res_scores <- read_csv("data/restaurant_scores.csv")
+base_url <- "http://www2.stat.duke.edu/~sms185/data/"
+res_scores <- read_csv(str_c(base_url, "health/restaurant_scores.csv"))
 ```
 
 #### Task 1
@@ -99,7 +100,7 @@ To get started, load the `jsonlite` package and read in
 
 ```r
 library(jsonlite)
-dine <- read_json("data/restaurant_scores.json")
+dine <- read_json(str_c(base_url, "health/restaurant_scores.json"))
 ```
 
 Your code to manipulate and summarize the resulting list object should

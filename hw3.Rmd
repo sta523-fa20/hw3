@@ -20,7 +20,8 @@ library(jsonlite)
 ## Part I
 
 ```{r read_csv_data}
-res_scores <- read_csv("data/restaurant_scores.csv")
+base_url <- "http://www2.stat.duke.edu/~sms185/data/"
+res_scores <- read_csv(str_c(base_url, "health/restaurant_scores.csv"))
 ```
 
 
@@ -32,5 +33,5 @@ res_scores <- read_csv("data/restaurant_scores.csv")
 ## Part II
 
 ```{r read_json_data}
-dine <- read_json("data/restaurant_scores.json")
+dine <- read_json(str_c(base_url, "health/restaurant_scores.json"))
 ```
